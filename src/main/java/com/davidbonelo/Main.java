@@ -1,6 +1,7 @@
 package com.davidbonelo;
 
 import com.davidbonelo._1_planetary_system.PlanetarySystem;
+import com.davidbonelo._3_sorting_algorithms.Sorter;
 
 import java.util.Scanner;
 
@@ -11,6 +12,7 @@ public class Main {
         int exercise = scanner.nextInt();
         switch (exercise) {
             case 1 -> PlanetarySystem.main(null);
+            case 3 -> Sorter.main(null);
         }
     }
 }
