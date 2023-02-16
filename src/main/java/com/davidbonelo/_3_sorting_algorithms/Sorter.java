@@ -8,25 +8,31 @@ import java.util.Scanner;
 
 public class Sorter {
     public static void main(String[] args) {
-
-        double[] randomNumbers = generateRandomDoubles();
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("How many numbers do you want to generate?\n-> ");
+        int numbersToGenerate = scanner.nextInt();
+        double[] randomNumbers = generateRandomDoubles(numbersToGenerate);
         System.out.println("Unsorted numbers:\n" + Arrays.toString((randomNumbers)));
 
-        Scanner scanner = new Scanner(System.in);
         System.out.print("What algorithm do you want to use to sort the numbers? 1. BubbleSort | 2. QuickSort\n-> ");
         int choice = scanner.nextInt();
+
+        final long startTime = System.nanoTime();
 
         switch (choice) {
             case 1 -> System.out.println("Bubble sorted numbers:\n" + Arrays.toString((bubbleSort(randomNumbers))));
             case 2 -> System.out.println("QuickSorted numbers:\n" + Arrays.toString((quickSort(randomNumbers))));
             default -> System.out.println("Unknown option");
         }
+
+        final long endTime = System.nanoTime();
+        System.out.println("Total execution time: " + (endTime - startTime) + "ns");
     }
 
-    private static double[] generateRandomDoubles() {
+    private static double[] generateRandomDoubles(int amount) {
         ArrayList<Double> arrayList = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
-            arrayList.add(BigDecimal.valueOf(Math.random() * 10).setScale(4, RoundingMode.HALF_UP).doubleValue());
+        for (int i = 0; i < amount; i++) {
+            arrayList.add(BigDecimal.valueOf(Math.random() * 100).setScale(4, RoundingMode.HALF_UP).doubleValue());
         }
         return arrayList.stream().mapToDouble(i -> i).toArray();
     }
