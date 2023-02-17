@@ -3,9 +3,12 @@ package com.davidbonelo._6_read_numbers;
 import java.util.Scanner;
 import java.util.Vector;
 
+/**
+ * class that stores numbers and detects duplicates
+ */
 public class DuplicatesDetector {
     public static void main(String[] args) {
-
+        // vector that stores the numbers
         Vector<Integer> numbers = new Vector<>();
 
         Scanner scanner = new Scanner(System.in);
@@ -21,6 +24,7 @@ public class DuplicatesDetector {
                 System.out.println("You already inserted the number " + userNumber);
             }
         }
+        // List the numbers stored.
         System.out.println("Stored numbers: ");
         for (int num : numbers) {
             System.out.print(num + ", ");

@@ -4,11 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f341d8b3-48ba-4b41-ada9-d37ab2e7ccc3" name="Changes" comment="" />
+    <list default="true" id="f341d8b3-48ba-4b41-ada9-d37ab2e7ccc3" name="Changes" comment="add exercise 2 solution">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/davidbonelo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/davidbonelo/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/davidbonelo/_1_planetary_system/CelestialBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/davidbonelo/_1_planetary_system/CelestialBody.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/davidbonelo/_1_planetary_system/PlanetarySystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/davidbonelo/_1_planetary_system/PlanetarySystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/davidbonelo/_3_sorting_algorithms/Sorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/davidbonelo/_3_sorting_algorithms/Sorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/davidbonelo/_4_ferry/Ferry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/davidbonelo/_4_ferry/Ferry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/davidbonelo/_4_ferry/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/davidbonelo/_4_ferry/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/davidbonelo/_6_read_numbers/DuplicatesDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/davidbonelo/_6_read_numbers/DuplicatesDetector.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -27,7 +47,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "dart.analysis.tool.window.visible": "false"
+    "dart.analysis.tool.window.visible": "false",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -39,6 +60,53 @@
       <option name="presentableId" value="Default" />
       <updated>1676492530319</updated>
     </task>
+    <task id="LOCAL-00001" summary="add ferry to main execution">
+      <created>1676640376310</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676640376312</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add exercise 5 solution">
+      <created>1676646848789</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676646848789</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add exercise 6 solution">
+      <created>1676666007740</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676666007740</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add exercise 2 solution">
+      <created>1676666200542</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676666200542</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add ferry to main execution" />
+    <MESSAGE value="add exercise 5 solution" />
+    <MESSAGE value="add exercise 6 solution" />
+    <MESSAGE value="add exercise 2 solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="add exercise 2 solution" />
   </component>
 </project>

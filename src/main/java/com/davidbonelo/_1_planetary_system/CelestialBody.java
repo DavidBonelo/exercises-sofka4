@@ -1,7 +1,5 @@
 package com.davidbonelo._1_planetary_system;
 
-import java.util.Scanner;
-
 /**
  * Base class for celestial bodies.
  */
@@ -34,6 +32,9 @@ abstract public class CelestialBody {
     public double getMass() {
         return mass;
     }
+    public String getName() {
+        return name;
+    }
 
     /**
      * calculates the force of gravity between this and another object.
@@ -44,9 +45,5 @@ abstract public class CelestialBody {
     public double calculateGravityBetween(CelestialBody celestialBody, double distance) {
         // F = G(m1m2)/R2 where G = 6.67430 N * m^2 * kg^−2  or  m^3 kg^−1 s^−2
         return 6.674 * Math.pow(10, -11) * this.mass * celestialBody.getMass() / (distance * distance);
-    }
-
-    public String getName() {
-        return name;
     }
 }

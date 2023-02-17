@@ -6,11 +6,15 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ *
+ */
 public class Sorter {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("How many numbers do you want to generate?\n-> ");
         int numbersToGenerate = scanner.nextInt();
+
         double[] randomNumbers = generateRandomDoubles(numbersToGenerate);
         System.out.println("Unsorted numbers:\n" + Arrays.toString((randomNumbers)));
 
@@ -29,6 +33,11 @@ public class Sorter {
         System.out.println("Total execution time: " + (endTime - startTime) + "ns");
     }
 
+    /**
+     * Generates the specified amount of random double numbers
+     * @param amount amount of numbers to create
+     * @return primitive array of double numbers
+     */
     private static double[] generateRandomDoubles(int amount) {
         ArrayList<Double> arrayList = new ArrayList<>();
         for (int i = 0; i < amount; i++) {
@@ -37,7 +46,9 @@ public class Sorter {
         return arrayList.stream().mapToDouble(i -> i).toArray();
     }
 
-    // perform the bubble sort
+    /**
+     * perform the bubble sort
+     */
     private static double[] bubbleSort(double[] array) {
         int size = array.length;
 
@@ -76,12 +87,15 @@ public class Sorter {
         return array;
     }
 
-    /* This function takes last element as pivot,
-       places the pivot element at its correct
-       position in sorted array, and places all
-       smaller (smaller than pivot) to left of
-       pivot and all greater elements to right
-       of pivot */
+
+    /**
+     * This function takes last element as pivot,
+     * places the pivot element at its correct
+     * position in sorted array, and places all
+     * smaller (smaller than pivot) to left of
+     * pivot and all greater elements to right
+     * of pivot
+     */
     private static int partition(double[] arr, int low, int high) {
         double pivot = arr[high];
         int i = (low - 1); // index of smaller element
@@ -106,10 +120,12 @@ public class Sorter {
         return i + 1;
     }
 
-    /* The main function that implements QuickSort()
-      arr[] --> Array to be sorted,
-      low  --> Starting index,
-      high  --> Ending index */
+    /**
+     * The main function that implements QuickSort()
+     * @param arr Array to be sorted,
+     * @param low Starting index,
+     * @param high Ending index
+     */
     private static void sort(double[] arr, int low, int high) {
         if (low < high) {
             /* pi is partitioning index, arr[pi] is

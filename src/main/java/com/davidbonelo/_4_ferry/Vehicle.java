@@ -4,6 +4,9 @@ import java.time.LocalDate;
 import java.util.Objects;
 import java.util.Scanner;
 
+/**
+ * Base class for vehicles types
+ */
 public class Vehicle {
     private final int passengers;
     private final int wheels;
@@ -19,6 +22,10 @@ public class Vehicle {
         this.travelMedium = travelMedium;
     }
 
+    /**
+     * Method to create an instance of Vehicle from user input data.
+     * @return a new instance of Vehicle.
+     */
     public static Vehicle createVehicle() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Insert the amount of passengers the vehicle has: ");
@@ -37,6 +44,9 @@ public class Vehicle {
         return new Vehicle(passengers, wheels, isCrewed, travelMedium, registrationDate);
     }
 
+    /**
+     * @return String with the attributes of the Vehicle.
+     */
     @Override
     public String toString() {
         return "passengers=" + passengers + ", wheels=" + wheels + ", isCrewed=" + isCrewed + ", " +
