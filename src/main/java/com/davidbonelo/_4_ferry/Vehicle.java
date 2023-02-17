@@ -21,13 +21,13 @@ public class Vehicle {
 
     public static Vehicle createVehicle() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Insert the amount of wheels the vehicle has: ");
-        int wheels = scanner.nextInt();
         System.out.println("Insert the amount of passengers the vehicle has: ");
         int passengers = scanner.nextInt();
-        scanner.nextLine();
+        System.out.println("Insert the amount of wheels the vehicle has: ");
+        int wheels = scanner.nextInt();
+        scanner.nextLine();// hacking the cursor
         System.out.println("Insert if the vehicle is crewed: (yes/no)");
-        String userIsCrewed = scanner.nextLine(); // hacking the cursor
+        String userIsCrewed = scanner.nextLine();
         boolean isCrewed = Objects.equals(userIsCrewed, "yes");
         System.out.println("Insert the medium through which the vehicle travels:");
         String travelMedium = scanner.nextLine();
@@ -40,6 +40,6 @@ public class Vehicle {
     @Override
     public String toString() {
         return "passengers=" + passengers + ", wheels=" + wheels + ", isCrewed=" + isCrewed + ", " +
-                "travelMedium='" + travelMedium + ", registrationDate=" + registrationDate + '}';
+                "travelMedium='" + travelMedium + ", registrationDate=" + registrationDate;
     }
 }
