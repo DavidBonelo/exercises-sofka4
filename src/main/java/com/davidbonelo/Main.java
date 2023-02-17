@@ -1,6 +1,7 @@
 package com.davidbonelo;
 
 import com.davidbonelo._1_planetary_system.PlanetarySystem;
+import com.davidbonelo._2_entry_point.EntryPoint;
 import com.davidbonelo._3_sorting_algorithms.Sorter;
 import com.davidbonelo._4_ferry.Ferry;
 import com.davidbonelo._6_read_numbers.DuplicatesDetector;
@@ -20,6 +21,7 @@ public class Main {
         }
         switch (exercise) {
             case 1 -> PlanetarySystem.main(null);
+            case 2 -> EntryPoint.main(null);
             case 3 -> Sorter.main(null);
             case 4, 5 -> Ferry.main(null);
             case 6 -> DuplicatesDetector.main(null);
