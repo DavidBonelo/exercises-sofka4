@@ -1,7 +1,6 @@
 package com.davidbonelo._4_ferry;
 
 import java.util.ArrayList;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Ferry {
